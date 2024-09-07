@@ -13,7 +13,7 @@
 </head>
 <body>
    <input id="inp" type="text">
-   <button id="btn">submit</button>
+   <button id="btn">hide</button>
    <div id="div"></div>
    <script>
         var btn= document.getElementById("btn");
@@ -22,9 +22,12 @@
         function pass(){
            var c= inp.getAttribute("type");
          if(c=="text"){
-            inp.setAttribute("type","password")
+            inp.setAttribute("type","password");
+            btn.innerHTML="show"
          }else{
-            inp.setAttribute("type","text")
+            inp.setAttribute("type","text");
+            btn.innerHTML="hide"
+
          }
         }
 
